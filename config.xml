@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.your.package.name" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Your Project Name</name>
+    <description>
+        Your Project Description Here
+    </description>
+    <author email="dev@youremail.org" href="http://autorpage.com">
+        Author Name
+    </author>
+    <preference name="orientation" value="landscape" />
+    <preference name="android-minSdkVersion" value="22"/>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="www/assets/icon.png" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <plugin name="heyzap-cordova" spec="~1.1.8" />
+    <plugin name="cordova-plugin-play-games-services" spec="https://github.com/alexandresgf/cordova-plugin-play-games-services.git">
+        <variable name="APP_ID" value="XXXAPPIDXXX" />
+    </plugin>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

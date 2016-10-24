@@ -1,0 +1,5 @@
+node_modules
+/cordova
+*.log
+.DS_Store
+apk
