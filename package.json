@@ -4,29 +4,30 @@
   "description": "Phaser.js and cordova boilerplate so you don’t have to do it.",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && npm install -g cordova && npm run cordova-folder",
-    "cordova-folder": "mkdir cordova && cp -a config.xml ./cordova && cd cordova && mkdir platforms && mkdir www && cordova platform add android",
-    "copy-files": "webpack -p && cp index.html ./cordova/www && cp base.css ./cordova/www && cp -a ./assets ./cordova/www",
-    "gen-keystore": "keytool -genkey -v -keystore ./keystore/release-key.jks -keyalg RSA -keysize 2048 -validity 100000 -alias XXX",
-    "align-apk": "$zipalign -v -p 4 ./cordova/platforms/android/build/outputs/apk/android-release-unsigned.apk ./apk/XXX.apk",
-    "sign-apk": "$apksigner sign --ks ./keystore/release-key.jks ./apk/XXX.apk",
-    "deploy-prod": "rm -rf ./apk/XXX.apk && npm run build-prod && npm run align-apk && npm run sign-apk",
-    "build": "rm -rf ./cordova && npm run cordova-folder && npm run copy-files && cd cordova && cordova build android",
-    "build-prod": "rm -rf ./cordova && npm run cordova-folder && npm run copy-files && cd cordova && cordova build android --release --keystore=../keystore/release-key.jks --storePassword=XXX --alias=XXX --password=XXX",
-    "test": "npm run build && npm run deploy",
-    "test-prod": "npm run build-prod && npm run deploy-prod && cd cordova && cordova run android --release",
-    "deploy": "cd cordova && cordova run android",
-    "server": "webpack-dev-server"
+    "preinstall": "yarn global add runjs cordova"
   },
   "author": "bimyou",
   "contributors": [
-    {"name": "Diogo Santos", "url": "https://twitter.com/daspinola"},
-    {"name": "Miguel Freitas", "url": "https://twitter.com/hexedster"}
+    {
+      "name": "Diogo Santos",
+      "url": "https://twitter.com/daspinola"
+    },
+    {
+      "name": "Miguel Freitas",
+      "url": "https://twitter.com/hexedster"
+    }
   ],
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "dependencies": {
+    "cordova": "^6.3.1",
     "phaser": "^2.5.0",
     "phaser-swipe": "^1.0.4",
+    "runjs": "^2.5.1",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
