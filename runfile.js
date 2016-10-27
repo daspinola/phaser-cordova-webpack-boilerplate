@@ -16,7 +16,10 @@ const task = {
     run('mkdir platforms', cordovaFolder);
     run('mkdir www', cordovaFolder);
     run('cp -a config.xml ./cordova');
-    run('cordova platform add android', cordovaFolder);  
+    task['platform-android']();
+  },
+  'platform-android': () => {
+    run('cordova platform add android', cordovaFolder);
   }
 };
 
