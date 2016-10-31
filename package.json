@@ -4,7 +4,7 @@
   "description": "Phaser.js and cordova boilerplate so you don’t have to do it.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "yarn global add runjs cordova"
+    "preinstall": "npm i -g runjs cordova"
   },
   "author": "bimyou",
   "contributors": [
