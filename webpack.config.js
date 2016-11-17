@@ -1,16 +1,16 @@
-var path = require("path");
+var path = require('path');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-var phaserModule = path.join(__dirname, '/node_modules/phaser/')
-var phaser = path.join(phaserModule, 'build/custom/phaser-split.js')
-var pixi = path.join(phaserModule, 'build/custom/pixi.js')
-var p2 = path.join(phaserModule, 'build/custom/p2.js')
+var phaserModule = path.join(__dirname, '/node_modules/phaser/');
+var phaser = path.join(phaserModule, 'build/custom/phaser-split.js');
+var pixi = path.join(phaserModule, 'build/custom/pixi.js');
+var p2 = path.join(phaserModule, 'build/custom/p2.js');
 
 module.exports = {
   entry: path.join(process.cwd(), './src/game.js'),
   output: {
     path: './cordova/www/build',
-    publicPath: "/build/",
-    filename: "bundle.js"
+    publicPath: '/build/',
+    filename: 'bundle.js',
   },
   devServer: {
     contentBase: './'
