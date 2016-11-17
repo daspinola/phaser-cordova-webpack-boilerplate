@@ -5,3 +5,4 @@ node_modules
 apk
 yarn.lock
 yarn-error.log
+keystore
