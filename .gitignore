@@ -3,3 +3,6 @@ node_modules
 *.log
 .DS_Store
 apk
+yarn.lock
+yarn-error.log
+keystore
