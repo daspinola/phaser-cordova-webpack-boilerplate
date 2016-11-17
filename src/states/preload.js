@@ -15,10 +15,11 @@ export default class extends Phaser.State {
   }
 
   preload() {
-   
+    // Assets should be loaded here
+    this.load.image('app_icon', 'assets/icon.png');
   }
 
   create() {
-     this.game.state.start('boot');
+    this.game.state.start('boot');
   }
 }
