@@ -45,7 +45,7 @@ export apksigner=$ANDROID_HOME/build-tools/24.0.3/apksigner
 
     ``` run keystore projectName ``` 
   
-  **Important!** Do not forget the keystore password you set, you will needwhen building the apk for production!
+  **Important!** Do not forget the keystore password you set, you will need when building the apk for production!
 
 # Workflow
 
