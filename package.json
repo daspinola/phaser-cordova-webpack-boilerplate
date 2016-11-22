@@ -1,6 +1,6 @@
 {
   "name": "phaser-cordova-webpack-boilerplate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Phaser.js and cordova boilerplate so you don’t have to do it.",
   "main": "index.js",
   "scripts": {
