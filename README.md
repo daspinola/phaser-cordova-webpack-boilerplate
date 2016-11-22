@@ -15,7 +15,7 @@ Fret not! This boilerplate will get you ready to code games for android in 10 si
 2. Open the terminal and run
 
     ``` android sdk ```
-    
+
 3. Install android SDK Build-tools version **24.0.3** or superior
 4. Install SDK Platform for API 19 (android 4.4.2) and higher versions
 5. Add the following exports to your bash profile
@@ -40,8 +40,8 @@ export apksigner=$ANDROID_HOME/build-tools/24.0.3/apksigner
 
     ``` npm install -g eslint ```
 
-9. Change **widget id and application details** 
-10. Create keystore so you can send the game for production with 
+9. Change **widget id and application details** in the **config.xml** file
+10. Create keystore so you can send the game for production with
 
     ``` run keystore projectName ``` 
   
