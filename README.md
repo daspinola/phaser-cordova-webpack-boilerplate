@@ -20,14 +20,14 @@ Fret not! This boilerplate will get you ready to code games for android in 10 si
 4. Install SDK Platform for API 19 (android 4.4.2) and higher versions
 5. Add the following exports to your bash profile
 
-```bash
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$HOME/Library/Android/sdk/tools:$PATH
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+    ```bash
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+    export PATH=$HOME/Library/Android/sdk/tools:$PATH
+    export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-export zipalign=$ANDROID_HOME/build-tools/24.0.3/zipalign
-export apksigner=$ANDROID_HOME/build-tools/24.0.3/apksigner
-```
+    export zipalign=$ANDROID_HOME/build-tools/24.0.3/zipalign
+    export apksigner=$ANDROID_HOME/build-tools/24.0.3/apksigner
+    ```
 
 6. Clone the boilerplate respository
 
