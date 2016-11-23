@@ -108,7 +108,7 @@ for the google play services cordova plugin
 
 # Most importantly!
 
-We want you to spend less time in the boilerplate and more time creating but most of all have fun and let us know of any game you make usign this boilerplate 
+We want you to spend less time in the boilerplate and more time creating but most of all have fun and let us know of any game you make using this boilerplate 
 [@daspinola](https://twitter.com/daspinola) and [@hexedster](https://twitter.com/hexedster)
 
 # License
