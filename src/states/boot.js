@@ -67,7 +67,7 @@ export default class extends Phaser.State {
     this.player.jump();
 
     // Start spawning the walls
-    this.timer = game.time.events.loop(1500, this.addWall, this);
+    this.timer = game.time.events.loop(2000, this.addWall, this);
     
     this.helpText.destroy();
   }
@@ -103,12 +103,12 @@ export default class extends Phaser.State {
 
     this.player.alive = false;
 
-    this.wallGroup.forEach(function(p){
-        p.body.velocity.x = 0;
+    this.wallGroup.forEach(function(wallChunk){
+        wallChunk.body.velocity.x = 0;
     });
 
-    this.starGroup.forEach(function(p){
-        p.body.velocity.x = 0;
+    this.starGroup.forEach(function(star){
+        star.body.velocity.x = 0;
     });
 
     game.time.events.remove(this.timer);
@@ -133,7 +133,7 @@ export default class extends Phaser.State {
   addWall(){
     const chunkSize = 64;
     const wallSize = Math.ceil(game.world.height / chunkSize);
-    const hole = game.rnd.integerInRange(2, wallSize-1);
+    const hole = game.rnd.integerInRange(1, wallSize-4);
     
     for(let i = 0; i < wallSize; i++){ 
       if( i !== hole && i !== hole + 1){
