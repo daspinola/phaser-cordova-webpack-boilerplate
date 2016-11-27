@@ -17,6 +17,16 @@ export default class extends Phaser.State {
   preload() {
     // Assets should be loaded here
     this.load.image('app_icon', 'assets/icon.png');
+
+    // Player
+    this.load.image('player', 'assets/player.png');
+
+    // Wall chunk
+    this.load.image('wallchunk', 'assets/wallchunk.png');
+
+    // Star
+    this.load.image('star', 'assets/star.png');
+
   }
 
   create() {
