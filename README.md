@@ -2,20 +2,33 @@
 
 Want to start coding games and don't know were to start?
 
-Fret not! This boilerplate will get you ready to code games for android in 10 simple steps! 
+Fret not! This boilerplate will get you ready to code and deploy games for android in 10 simple steps! 
 
 **Let's get to it!**
 
 **Note:** Only tested on Mac OSX.
 
-# Steps to get started
+# Development dependencies
+
+1. Clone the boilerplate respository
+
+    ``` git clone https://github.com/daspinola/phaser-cordova-webpack-boilerplate.git ```
+2. Go to the cloned folder and run
+
+    ``` npm install ```
+3. For eslint install it globally with 
+
+    ``` npm install -g eslint ```
+
+**Note:** You can use the command ``` run server ``` to play the demo 
+
+# Production dependencies
 #### Should only be needed once
 
 1. Install [android SDK](https://developer.android.com/studio/index.html)
 2. Open the terminal and run
 
     ``` android sdk ```
-
 3. Install android SDK Build-tools version **24.0.3** or superior
 4. Install SDK Platform for API 19 (android 4.4.2) and higher versions
 5. Add the following exports to your bash profile
@@ -28,24 +41,12 @@ Fret not! This boilerplate will get you ready to code games for android in 10 si
     export zipalign=$ANDROID_HOME/build-tools/24.0.3/zipalign
     export apksigner=$ANDROID_HOME/build-tools/24.0.3/apksigner
     ```
+6. Change **widget id and application details** in the **config.xml** file
+7. Create keystore so you can send the game for production with
 
-6. Clone the boilerplate respository
+    ``` run keystore projectName ```
 
-    ``` git clone https://github.com/daspinola/phaser-cordova-webpack-boilerplate.git ```
-7. Go to the cloned folder and run
-
-    ``` npm install ```
-
-8. For eslint install it globally with 
-
-    ``` npm install -g eslint ```
-
-9. Change **widget id and application details** in the **config.xml** file
-10. Create keystore so you can send the game for production with
-
-    ``` run keystore projectName ``` 
-  
-  **Important!** Do not forget the keystore password you set, you will need when building the apk for production!
+**Important!** Do not forget the keystore password you set, you will need when building the apk for production!
 
 # Workflow
 
@@ -61,12 +62,12 @@ Fret not! This boilerplate will get you ready to code games for android in 10 si
 
   **Note** You can leave the server running and keep changing the game, just remember to reload the page when you want to test it out
 
-- Want to see it on your cellphone? 
+- Want to see it on mobile device?
 Make sure you have it set to debug and file transfer mode and in the terminal
 
-  ``` run deploy ```
+  ``` run build:deploy ```
 
-- While the game is opened in your phone you can inspect your game logs with [chrome inspect](chrome://inspect/#devices)
+- While the game is opened in your mobile device you can inspect your game logs with [chrome inspect](chrome://inspect/#devices)
 
 - Have the game ready and want to upload the apk to google play? 
 You can find it in the **apk** folder after you do:
