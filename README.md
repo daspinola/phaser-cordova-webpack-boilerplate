@@ -6,8 +6,6 @@ Fret not! This boilerplate will get you ready to code and deploy games for andro
 
 **Let's get to it!**
 
-**Note:** Only tested on Mac OSX.
-
 # Development dependencies
 
 1. Clone the boilerplate respository
