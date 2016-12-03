@@ -101,7 +101,9 @@ for the google play services cordova plugin
 
 [floatinghotpot](https://github.com/floatinghotpot/cordova-admob-pro) for the admob plugin
 
-[Phaser.io](https://github.com/photonstorm/phaser)
+[lean](https://github.com/lean) wit the awesome phaser boilerplate
+
+[Phaser.io](https://github.com/photonstorm/phaser) the game framework
 
 [Pull and push](https://play.google.com/store/apps/details?id=com.bimyou.pushandpull&hl=en) our game created with this boilerplate
 
